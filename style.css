@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+	padding: 0;
+  background: 
+    #fff 
+   /*url(http://subtlepatterns.com/patterns/pw_maze_black.png) repeat;*/
+   /*url(http://subtlepatterns.com/patterns/pw_maze_white.png) repeat;*/
+   /*url(http://subtlepatterns.com/patterns/kindajean.png) repeat
+*/    ;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: normal;
+  text-shadow: 0 1px 1px #fff;
+}
+
+h1 {
+  font-weight:100;
+  font-size:40px;
+  letter-spacing: -1px;
+  color: #777;
+/*  text-shadow: none;*/
+}
+
+#container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+#countdown_dashboard {
+	width: 700px;
+  height: 210px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 3px;
+  /*border:1px solid #eee;*/
+  background: rgba(255,255,255,0.1);
+  box-shadow: 5px;
+  
+}
+
+.dash {
+	width: 65px;
+	height: 114px;
+	background: transparent url('../images/dash.png') 0 0 no-repeat;
+	float: left;
+	margin-left: 0px;
+	position: relative;
+  text-align: center;
+}
+
+/*.digit {
+  border-top:5px solid #000;
+}
+*/
+.dash .digit {
+  background: #333;
+  color: #fff;
+	font-size: 15pt;
+	font-weight: 800;
+	float: left;
+	width: 24px;
+  padding: 5px 0;
+	text-align: center;
+	font-family: inherit;
+	position: relative;
+   margin: 1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.dash_title {
+	
+	display: block;
+	font-size: 7.5pt;
+  margin-bottom: 5px;
+  text-align: left;
+	color: #777;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+  font-weight:100;
+}
+
+hr {margin: 30px 0;}
+
+hr.dark {
+  height:1px;
+  background: #111;
+  border: 0;
+  border-bottom:1px solid #222;
+}
+hr.light {
+  height:1px;
+  background: #ccc;
+  border: 0;
+  border-bottom:1px solid #fff;
+}
+
+.clearfix {
+  clear:both;
+}
