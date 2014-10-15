@@ -1,0 +1,100 @@
+/* Rosario. I've added and changed few things. Feel free to change it as you like */
+
+/* Font size of 2.0 is too big, I'll reduce it */
+body {font-size: 1.9rem;}
+
+/* Adding some text shadow*/
+.site-head {text-shadow: 2px 2px #234;}
+.site-head a {color:#eee;}
+
+/* The font is too large in the post view. Revert to small size*/
+.post-header .blog-title {font-size:inherit;}
+
+/* Reduce font size and add line-height*/
+pre{
+	font-size: 0.75em;  
+	line-height: 1.4em;
+}
+
+/* Author styling */
+.author {margin-bottom:1em;}
+.author header{
+	float:left;
+	width: 80px;
+}
+.author article{
+	margin-left:80px;
+	min-height: 80px;
+	padding-left:20px;
+}
+img.profile {
+	width:80px;
+	height:auto;
+  	border-radius: 50px;
+}
+
+/* CountDown */
+
+#countdown_dashboard {
+	max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 3px;
+  /*border:1px solid #eee;*/
+  /*background: rgba(255,255,255,0.1);*/
+  box-shadow: 5px;
+  
+}
+
+#countdown_dashboard h1 {
+  font-weight:100;
+  font-size:40px;
+  letter-spacing: -1px;
+  color: #777;
+/*  text-shadow: none;*/
+}
+
+
+.dash {
+	width: 65px;
+	height: 114px;
+	background: transparent url('../images/dash.png') 0 0 no-repeat;
+	float: left;
+	margin-left: 0px;
+}
+
+/*.digit {
+  border-top:5px solid #000;
+}
+*/
+.dash .digit {
+  background: #333;
+  color: #fff;
+	font-size: 15pt;
+	font-weight: 800;
+	float: left;
+	width: 24px;
+  padding: 5px 0;
+	text-align: center;
+	font-family: inherit;
+	position: relative;
+   margin: 1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.dash_title {
+	display: block;
+	font-size: 7.5pt;
+  margin-bottom: 5px;
+  text-align: left;
+	color: #777;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+  font-weight:100;
+}
+
+.clearfix {
+  clear:both;
+}

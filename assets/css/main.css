@@ -1,30 +1,39 @@
-body {
-	margin: 0;
-	padding: 0;
-  background: 
-    #fff 
-   /*url(http://subtlepatterns.com/patterns/pw_maze_black.png) repeat;*/
-   /*url(http://subtlepatterns.com/patterns/pw_maze_white.png) repeat;*/
-   /*url(http://subtlepatterns.com/patterns/kindajean.png) repeat
-*/    ;
-  text-align: center;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: normal;
-  text-shadow: 0 1px 1px #fff;
+/* Rosario. I've added and changed few things. Feel free to change it as you like */
+
+/* Font size of 2.0 is too big, I'll reduce it */
+body {font-size: 1.9rem;}
+
+/* Adding some text shadow*/
+.site-head {text-shadow: 2px 2px #234;}
+.site-head a {color:#eee;}
+
+/* The font is too large in the post view. Revert to small size*/
+.post-header .blog-title {font-size:inherit;}
+
+/* Reduce font size and add line-height*/
+pre{
+	font-size: 0.75em;  
+	line-height: 1.4em;
 }
 
-h1 {
-  font-weight:100;
-  font-size:40px;
-  letter-spacing: -1px;
-  color: #777;
-/*  text-shadow: none;*/
+/* Author styling */
+.author {margin-bottom:1em;}
+.author header{
+	float:left;
+	width: 80px;
+}
+.author article{
+	margin-left:80px;
+	min-height: 80px;
+	padding-left:20px;
+}
+img.profile {
+	width:80px;
+	height:auto;
+  	border-radius: 50px;
 }
 
-#container {
-	margin: 0 auto;
-	max-width: 400px;
-}
+/* CountDown */
 
 #countdown_dashboard {
 	max-width: 100%;
@@ -37,14 +46,21 @@ h1 {
   
 }
 
+#countdown_dashboard h1 {
+  font-weight:100;
+  font-size:40px;
+  letter-spacing: -1px;
+  color: #777;
+/*  text-shadow: none;*/
+}
+
+
 .dash {
 	width: 65px;
 	height: 114px;
 	background: transparent url('../images/dash.png') 0 0 no-repeat;
 	float: left;
 	margin-left: 0px;
-	position: relative;
-  text-align: center;
 }
 
 /*.digit {
@@ -69,7 +85,6 @@ h1 {
 }
 
 .dash_title {
-	
 	display: block;
 	font-size: 7.5pt;
   margin-bottom: 5px;
@@ -78,21 +93,6 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
   font-weight:100;
-}
-
-hr {margin: 30px 0;}
-
-hr.dark {
-  height:1px;
-  background: #111;
-  border: 0;
-  border-bottom:1px solid #222;
-}
-hr.light {
-  height:1px;
-  background: #ccc;
-  border: 0;
-  border-bottom:1px solid #fff;
 }
 
 .clearfix {

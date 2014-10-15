@@ -1,76 +1,60 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta name=description content="Site com informações do casamento de Júlia Beatriz Guadanhim Neira e Matheus Aparecido Godoy Ribeiro no dia 07 de dezembro de 2014">
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<title>Júlia e Matheus vão casar</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+---
+layout: default
+title: Home
+cover: false
+about: 'about.html'
+---
 
-	<body id="container" >
-		<header>
-			<div id="logo">
-				
-			</div>
-			<div id="noivos" >
-				<h1>Júlia e Matheus</h1>
-				<h2>07 de dezembro 2014</h2>
-			</div>
-			<nav class="nav-bar">
-			        <a href="#">Convite</a>
-			        <a href="#">Presentes</a>
-			     	<a href="#">Locais</a>
-			    	<a href="#">Presença</a>
-			    	<a href="#">Recados</a>
-			    	<a href="#">Contatos</a>
-			</nav>
+<header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
+    <div class="vertical">
+        <div class="site-head-content" class="inner">
+            {% if page.logo %}
+                <a class="blog-logo" href="{{ site.baseurl }}">
+                    <img src="{{ page.logo }}" alt="Blog Logo" />
+                </a>
+            {% endif %}
+            <h1 class="blog-title">{{ site.name }}</h1>
+            <h2 class="blog-description"> 
+                {{ site.description }}. 
+                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
+            </h2>
+        </div>
+    </div>
+</header>
 
-			<div id="contagem" >
-				<!-- Countdown dashboard start -->
-		<div id="countdown_dashboard" class="shadow">
-       <hr class="light"> 
+<main class="content" role="main">
 
-			<div class="dash days_dash">
-				<span class="dash_title">dias</span>
-				<div class="digit">0</div>
-				<div class="digit">6</div>
-			</div>
+    {% for post in paginator.posts %}
 
-			<div class="dash hours_dash">
-				<span class="dash_title">horas</span>
-				<div class="digit">1</div>
-				<div class="digit">5</div>
-			</div>
+    <article class="post">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {{!tags prefix="on "}}</span>
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
-			<div class="dash minutes_dash">
-				<span class="dash_title">minutos</span>
-				<div class="digit">0</div>
-				<div class="digit">4</div>
-			</div>
+        </header>
+        <section class="post-excerpt">
+            {{ post.excerpt }}
+        </section>
+    </article>
 
-			<div class="dash seconds_dash">
-				<span class="dash_title">segundos</span>
-				<div class="digit">3</div>
-				<div class="digit">3</div>
-			</div>
-      
-      <div class="clearfix"></div>
-      
-      <hr class="light">
+    {% endfor %}
 
-		</div>
-		<!-- Countdown dashboard end -->
-			</div>
-		</header>
-		<article>
-			<blockquote>Vocês nos verão: Solteiros pela última vez, 
-			casados pela primeira vez e felizes para sempre</blockquote>
-		</article>
-		<footer>
-			WhatsApp: Júlia (16) 98181 6002 - Matheus (16) 98265 0942
-		</footer>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="countdown.js"></script>
-	</body>
-</html>
+    <nav class="pagination" role="pagination">
+
+        {% if paginator.previous_page %}
+          {% if paginator.previous_page == 1 %}
+          <a class="newer-posts" href="/" title="Previous Page">&laquo; Newer Posts</a>
+          {% else %}
+          <a class="newer-posts" href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Newer Posts</a>
+          {% endif %}
+        {% endif %}
+
+        <span class="page-number"> Page {{paginator.page}} of {{paginator.total_pages}} </span>
+        
+        {% if paginator.next_page %} 
+        <a class="older-posts" href="/page{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>
+        {% endif %} 
+    </nav>
+    
+
+</main>
