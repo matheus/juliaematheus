@@ -19,6 +19,7 @@ convite: 'convite.html'
                 <br><br>
                 {% if page.convite %} <a href='{{ site.baseurl }}{{ page.convite }}'> Convite </a> {% endif %}
             </h2>
+             {% include countdown.html %}
         </div>
     </div>
 </header>
@@ -40,38 +41,6 @@ convite: 'convite.html'
 
     {% endfor %}
 
-    <!-- Countdown dashboard start -->
-        <div id="countdown_dashboard" class="shadow">
-        <h1>O grande dia está chegando</h1>
-            <div class="dash days_dash">
-                <span class="dash_title">dias</span>
-                <div class="digit">0</div>
-                <div class="digit">6</div>
-            </div>
-
-            <div class="dash hours_dash">
-                <span class="dash_title">horas</span>
-                <div class="digit">1</div>
-                <div class="digit">5</div>
-            </div>
-
-            <div class="dash minutes_dash">
-                <span class="dash_title">minutos</span>
-                <div class="digit">0</div>
-                <div class="digit">4</div>
-            </div>
-
-            <div class="dash seconds_dash">
-                <span class="dash_title">segundos</span>
-                <div class="digit">3</div>
-                <div class="digit">3</div>
-            </div>
-      
-      <div class="clearfix"></div>
-
-        </div>
-        <!-- Countdown dashboard end -->
-
     <nav class="pagination" role="pagination">
 
         {% if paginator.previous_page %}
@@ -82,7 +51,7 @@ convite: 'convite.html'
           {% endif %}
         {% endif %}
 
-        <span class="page-number"> Page {{paginator.page}} of {{paginator.total_pages}} </span>
+        <span class="page-number">  {{paginator.page}}  {{paginator.total_pages}} </span>
         
         {% if paginator.next_page %} 
         <a class="older-posts" href="/page{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>
