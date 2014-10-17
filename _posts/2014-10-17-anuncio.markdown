@@ -22,7 +22,7 @@ A cerimônia ocorrerá na Igreja Adventista do Sétimo Dia, Central de Jaboticab
 A festa será no Restaurante Brothers Grill (Antigo Tempero Manero :) ), que fica na Avenida Pintos, 745.
 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d7436.746671529548!2d-48.32573341234089!3d-21.25668463724397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e0!4m5!1s0x94b96b7ee454dd57%3A0x5f8988d1ba1eca2c!2sR.+Juc%C3%A1+Quito%2C+1098+-+Centro%2C+SP%2C+14870-260!3m2!1d-21.251886499999998!2d-48.322299799999996!4m5!1s0x94b96b625f69e46b%3A0x975ecddbcff97f7f!2sAv.+Pintos%2C+745+-+Sorocabano%2C+SP%2C+14871-080!3m2!1d-21.260196!2d-48.320380799999995!5e0!3m2!1spt-BR!2sbr!4v1413545112907" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d7436.746671529548!2d-48.32573341234089!3d-21.25668463724397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e0!4m5!1s0x94b96b7ee454dd57%3A0x5f8988d1ba1eca2c!2sR.+Juc%C3%A1+Quito%2C+1098+-+Centro%2C+SP%2C+14870-260!3m2!1d-21.251886499999998!2d-48.322299799999996!4m5!1s0x94b96b625f69e46b%3A0x975ecddbcff97f7f!2sAv.+Pintos%2C+745+-+Sorocabano%2C+SP%2C+14871-080!3m2!1d-21.260196!2d-48.320380799999995!5e0!3m2!1spt-BR!2sbr!4v1413545112907" max-width="100%" max-height="450" frameborder="0" style="border:0"></iframe>
 
 <br>
 ### Lista de Presentes
