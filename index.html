@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Home
-cover: "/assets/images/cover.jpg"
-convite: false
+cover: false
+about: false
+logo: 'assets/images/logo.png'
 ---
 
 <header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
@@ -17,9 +18,8 @@ convite: false
             <h2 class="blog-description"> 
                 {{ site.description }}
                 <br>
-                {% if page.convite %} <a href='{{ site.baseurl }}{{ page.convite }}'> Convite </a> {% endif %}
+                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> Sobre nós </a> {% endif %}
             </h2>
-             {% include countdown.html %}
         </div>
     </div>
 </header>
@@ -29,8 +29,9 @@ convite: false
     {% for post in paginator.posts %}
 
     <article class="post">
+    {% include countdown.html %}
+    <br>
         <header class="post-header">
-            <span class="post-meta"><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {{!tags prefix="on "}}</span>
             <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
         </header>
@@ -51,7 +52,7 @@ convite: false
           {% endif %}
         {% endif %}
 
-        <span class="page-number">  {{paginator.page}}  {{paginator.total_pages}} </span>
+        <span class="page-number"> </span>
         
         {% if paginator.next_page %} 
         <a class="older-posts" href="/page{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>

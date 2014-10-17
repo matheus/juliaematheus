@@ -371,8 +371,8 @@ margin on the iframe, cause it breaks stuff. */
     height: 60%;
     margin-bottom: 5rem;
     text-align: center;
-    color: #50585D;
-    background: #303538 no-repeat center center;
+    color: #fff;
+    background: #971A1E no-repeat center center;
     background-size: cover;
 }
 
@@ -417,6 +417,10 @@ margin on the iframe, cause it breaks stuff. */
     border-bottom: #EBF2F6 1px solid;
     word-break: break-word;
     hyphens: auto;
+}
+
+.post img {
+    max-width: 100%;
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
